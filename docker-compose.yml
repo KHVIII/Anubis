@@ -28,7 +28,6 @@ services:
       context: ./api
       args:
         - GIT_TAG=${GIT_TAG:-latest}
-
     command: sh -c "while true; do python3 dev.py; sleep 1; done"
     environment:
       - "MINDEBUG=0"
